@@ -7,7 +7,7 @@
             let time = 1000;
 
             // image list
-            images[0] = 'Pictures\Slideshow\20170504_103549.jpg';
+            images[0] = '1.jpg';
             images[1] = 'Pictures\Slideshow\20170504_110457.jpg';
             images[2] = 'Pictures\Slideshow\20170504_111156.jpg';
             images[3] = '';
@@ -48,12 +48,8 @@
             function changeImg() {
                 document.slide.src = images[i];
 
-                if(i < images.length){
                     i = Math.floor(Math.random()* 37);
-                } else {
-                    i = Math.floor(Math.random()* 36);
-                }
- 
+            
                 setTimeout('changeImg()', time);
                 }
 
