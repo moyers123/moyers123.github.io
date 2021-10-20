@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html>
     <body>
+        <script>
+            let i = 0;
+            let images = [];
+            let time = 1000;
+
+            // image list
+            images[0] = 'Pictures\Slideshow\20170504_103549.jpg';
+            images[1] = 'Pictures\Slideshow\20170504_110457.jpg';
+            images[2] = 'Pictures\Slideshow\20170504_111156.jpg';
+            images[3] = '';
+            images[4] = '';
+            images[5] = '';
+            images[6] = '';
+            images[7] = '';
+            images[8] = '';
+            images[9] = '';
+            images[10] = '';
+            images[11] = '';
+            images[12] = '';
+            images[13] = '';
+            images[14] = '';
+            images[15] = '';
+            images[16] = '';
+            images[17] = '';
+            images[18] = '';
+            images[19] = '';
+            images[20] = '';
+            images[21] = '';
+            images[22] = '';
+            images[23] = '';
+            images[24] = '';
+            images[25] = '';
+            images[26] = '';
+            images[27] = '';
+            images[28] = '';
+            images[29] = '';
+            images[30] = '';
+            images[31] = '';
+            images[32] = '';
+            images[33] = '';
+            images[34] = '';
+            images[35] = '';
+            images[36] = '';
+
+            function changeImg() {
+                document.slide.src = images[i];
+
+                if(i < images.length){
+                    i = Math.floor(Math.random()* 37);
+                } else {
+                    i = Math.floor(Math.random()* 36);
+                }
+ 
+                setTimeout('changeImg()', time);
+                }
+
+        window.onload = changeImg;
+        </script>
+
+
+
+
         <img src='Pictures\Slideshow\20170504_103549.jpg' alt= 'Slideshow Picture 1' width='800' height= '400' />
         <img src='Pictures\Slideshow\20170504_110457.jpg' alt= 'Slideshow Picture 2' width='800' height= '400' />
         <img src='Pictures\Slideshow\20170504_111156.jpg' alt= 'Slideshow Picture 3' width='800' height= '400' />
         <img src='Pictures\Slideshow\20170504_111258.jpg' alt= 'Slideshow Picture 4' width='800' height= '400' />
         <img src='Pictures\Slideshow\20170504_172856.jpg' alt= 'Slideshow Picture 5' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 6' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 7' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 8' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 9' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 10' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 11' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 12' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 13' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 14' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 15' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 16' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 17' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 18' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 19' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 20' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 21' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 22' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 23' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 24' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 25' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 26' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 27' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 28' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 29' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 30' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 31' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 32' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 33' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 34' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 35' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 36' width='800' height= '400' />
-        <img src='' alt= 'Slideshow Picture 37' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0032.JPG' alt= 'Slideshow Picture 6' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0085.JPG' alt= 'Slideshow Picture 7' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0130.JPG' alt= 'Slideshow Picture 8' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0137.JPG' alt= 'Slideshow Picture 9' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0153.JPG' alt= 'Slideshow Picture 10' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0157.JPG' alt= 'Slideshow Picture 11' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0166.JPG' alt= 'Slideshow Picture 12' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0175.JPG' alt= 'Slideshow Picture 13' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0338.JPG' alt= 'Slideshow Picture 14' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0549.JPG' alt= 'Slideshow Picture 15' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0550.JPG' alt= 'Slideshow Picture 16' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0591.JPG' alt= 'Slideshow Picture 17' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0603.JPG' alt= 'Slideshow Picture 18' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0606.JPG' alt= 'Slideshow Picture 19' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0617.JPG' alt= 'Slideshow Picture 20' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0623.JPG' alt= 'Slideshow Picture 21' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0809.JPG' alt= 'Slideshow Picture 22' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0810.JPG' alt= 'Slideshow Picture 23' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0815.JPG' alt= 'Slideshow Picture 24' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0816.JPG' alt= 'Slideshow Picture 25' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0818.JPG' alt= 'Slideshow Picture 26' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0823.JPG' alt= 'Slideshow Picture 27' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0824.JPG' alt= 'Slideshow Picture 28' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0828.JPG' alt= 'Slideshow Picture 29' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0834.JPG' alt= 'Slideshow Picture 30' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_0986.JPG' alt= 'Slideshow Picture 31' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_1014.JPG' alt= 'Slideshow Picture 32' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_1033.JPG' alt= 'Slideshow Picture 33' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_1126.JPG' alt= 'Slideshow Picture 34' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_1154.JPG' alt= 'Slideshow Picture 35' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_1188.JPG' alt= 'Slideshow Picture 36' width='800' height= '400' />
+        <img src='Pictures\Slideshow\DSC_1189.JPG' alt= 'Slideshow Picture 37' width='800' height= '400' />
 
+        <img name='slide' width='800' height='400'>
     </body>
 </html>
