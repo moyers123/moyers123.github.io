@@ -1,13 +1,21 @@
+html {
+    background-color: black;
+    color: white;
+}
 head {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 h1 {
-    color: blue;
+    color: yellow;
 }
 
 p {
     color: red;
-    background-color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
