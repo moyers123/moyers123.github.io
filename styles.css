@@ -33,6 +33,7 @@ li{
     padding-left: 10px;
     font-size: 40px;
     font-weight: bold;
+    justify-content: center;
 }
 
 .banner {
