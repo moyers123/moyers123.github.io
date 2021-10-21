@@ -54,7 +54,7 @@ a:hover{
 banner_slides {
     width: 1980px;
     height: 300px;
-    top: 0;
+    top: 50px;
     left: 0;
     display: block;
     position: relative;
