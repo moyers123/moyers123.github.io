@@ -6,11 +6,20 @@ head {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.nav {
+    background-color: red;
+    color: blue;
+    list-style: none;
+    text-align: right;
+    padding: 20px, 0 20px 0;
+    
+}
+
 .banner {
     background-color: pink;
     width: 1000px;
     height: 200px;
-    display: flex;
+    display: grid;
 }
 
 .banner img {
@@ -18,7 +27,7 @@ head {
     height: 100%;
     top: 0;
     left: 0;
-    display: inline-flex;
+    display: grid;
 }
 
 h1 {
