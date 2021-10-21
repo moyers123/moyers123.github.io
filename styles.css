@@ -9,7 +9,7 @@ html {
     background-color: red;
     color: blue;
     list-style: none;
-    float: right;
+    text-align: right;
     padding: 20px, 0 20px 0;
     margin: 0;
 }
@@ -53,7 +53,7 @@ a {
     height: 200px;
     display: grid;
     position: absolute;
-    top: 50px;
+    top: 150px;
 }
 
 .banner img {
