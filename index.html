@@ -5,7 +5,19 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
         <h1>Hello World</h1>
-        <img src='Pictures\Slideshow\20170504_103549.jpg' alt= 'Slideshow Picture 1' width='800' height= '400' />
+        <script>
+            let time = 1000;
+
+            function changeImg() {
+                let i = Math.floor(Math.random()* 16);
+                document.slide.src = `${i}.JPG`;  
+                setTimeout('changeImg()', time);
+                }
+
+        window.onload = changeImg;
+        </script>
+
+        <img name='slide' width='800' height='400'>
     </head>
     <body>
         <p>I hope this is easier on the eyes.</p>
