@@ -8,6 +8,7 @@ head {
 
 head,
 img {
+    display: flex;
     height: '600';
     width: '800';
     flex-wrap: wrap;
