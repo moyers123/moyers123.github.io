@@ -11,17 +11,19 @@
             function changeImg() {
                 let i = Math.floor(Math.random()* 37);
                 if(i > 0 && i < 6){
-                    document.getElementById('slide').src = `Pictures/Slideshow/${i}.jpg`;
+                    document.getElementById('slides').src = `Pictures/Slideshow/${i}.jpg`;
                 } else {
-                    document.getElementById('slide').src = `Pictures/Slideshow/${i}.JPG`;
+                    document.getElementById('slides').src = `Pictures/Slideshow/${i}.JPG`;
                 }
                 setTimeout('changeImg()', time);
             }
 
         window.onload = changeImg;
         </script>
-
-        <img id='slide'>
+        <div class='banner'>
+            <img class='banner_slides' id='slides'>
+        </div>
+            
     </head>
     <body>
         <p>I hope this is easier on the eyes.</p>
