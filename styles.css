@@ -38,6 +38,7 @@ a:hover{
     width: 1920px;
     height: 200px;
     display: grid;
+    position: absolute;
 }
 
 .banner img {
@@ -46,6 +47,7 @@ a:hover{
     top: 0;
     left: 0;
     display: grid;
+    position: relative;
 }
 
 h1 {
