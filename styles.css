@@ -15,10 +15,8 @@ head {
 .banner img {
     width: 90%;
     height: 90%;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 0;
+    left: 0;
 }
 
 h1 {
