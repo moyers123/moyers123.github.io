@@ -18,13 +18,19 @@ ul {
     text-align: right;
 }
  
-li{
+li a {
     color: white;
     font-size: 16px;
     text-transform: capitalize;
     text-decoration: none;
     display: inline-block;
     letter-spacing: 2px;
+    padding: 20px 10px;
+}
+
+li a:hover{
+    color: yellow;
+    
 }
 
 
@@ -35,6 +41,7 @@ li{
     font-size: 40px;
     font-weight: bold;
     line-height: 75px;
+    letter-spacing: 4px;
 }
 
 .banner {
