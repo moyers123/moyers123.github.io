@@ -10,14 +10,13 @@ head {
     background-color: pink;
     width: 700px;
     height: 500px;
-    position: absolute;
+    padding: 3rem;
 }
 
 .banner_slides {
     width: 50%;
     height: 50%;
     object-fit: cover;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
