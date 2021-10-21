@@ -9,7 +9,7 @@ html {
     background-color: red;
     color: blue;
     list-style: none;
-    text-align: right;
+    float: right;
     padding: 20px, 0 20px 0;
     margin: 0;
 }
@@ -36,16 +36,16 @@ a:hover{
 .logo {
     color: yellow;
     float: left;
-    padding-left: 25px;
+    padding-left: 15px;
     font-size: 20px;
     font-weight: bold;
 }
 
-/*.logo,
+.logo,
 a {
     text-decoration: none;
     color: yellow;
-}*/
+}
 
 .banner {
     background-color: pink;
