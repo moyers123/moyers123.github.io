@@ -53,6 +53,7 @@ a {
     height: 200px;
     display: grid;
     position: absolute;
+    top: 50px;
 }
 
 .banner img {
