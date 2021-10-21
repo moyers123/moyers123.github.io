@@ -10,6 +10,7 @@ head {
     background-color: pink;
     width: 1000px;
     height: 200px;
+    display: flex;
 }
 
 .banner img {
@@ -17,6 +18,7 @@ head {
     height: 90%;
     top: 0;
     left: 0;
+    display: inline-flex;
 }
 
 h1 {
