@@ -41,11 +41,11 @@ a:hover{
     font-weight: bold;
 }
 
-.logo,
+/*.logo,
 a {
     text-decoration: none;
     color: yellow;
-}
+}*/
 
 .banner {
     background-color: pink;
