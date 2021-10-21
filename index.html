@@ -10,14 +10,14 @@
 
             function changeImg() {
                 let i = Math.floor(Math.random()* 16);
-                document.slide.src = `Pictures/Slideshow/${i}.JPG`;
+                document.getElementById('slide').src = `Pictures/Slideshow/${i}.JPG`;
                 setTimeout('changeImg()', time);
                 }
 
         window.onload = changeImg;
         </script>
 
-        <img name='slide' width='800' height='400'>
+        <img id='slide' width='800' height='400'>
     </head>
     <body>
         <p>I hope this is easier on the eyes.</p>
