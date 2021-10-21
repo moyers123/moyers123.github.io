@@ -49,20 +49,19 @@ a {
 
 .banner {
     background-color: pink;
-    width: 1920px;
+    width: 100%;
     height: 200px;
-    display: grid;
+    display: block; 
     position: absolute;
     top: 150px;
 }
 
 .banner,
-img {
+banner_slides {
     width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    display: grid;
+    display: block;
     position: relative;
 }
 
