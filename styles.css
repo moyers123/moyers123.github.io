@@ -10,12 +10,15 @@ head {
     background-color: pink;
     width: 700px;
     height: 500px;
+    position: absolute;
 }
 
 .banner_slides {
     width: 50%;
     height: 50%;
     object-fit: cover;
+    position: relative;
+    display: flex;
 }
 
 h1 {
