@@ -12,7 +12,8 @@ img {
     height: '600';
     width: '800';
     flex-wrap: wrap;
-    transform: center;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
