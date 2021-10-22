@@ -54,7 +54,7 @@ a:hover{
 .banner {
     background-color: pink;
     width: 100%;
-    height: 400px;
+    height: 100%;
     display: block; 
     position: fixed;
 }
@@ -62,9 +62,7 @@ a:hover{
 .banner,
 .moving-banner {
     width: 100%;
-    height: 400px;
-    top: 0;
-    left: 0;
+    height: 100%;
     display: block;
     position: absolute;
     box-sizing: content-box;
