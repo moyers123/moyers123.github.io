@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     background-color: skyblue;
     color: white;
@@ -86,15 +87,6 @@ a:hover{
     to {
         transform: translateY(-150px)
     }
-}
-
-
-h1 {
-    color: yellow;
-}
-
-p {
-    color: red;
 }
 
 footer {
