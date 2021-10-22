@@ -68,7 +68,7 @@ a:hover{
     position: absolute;
     box-sizing: content-box;
     background-size: cover;
-    animation: moving 30s linear infinite;
+    animation: moving 60s linear infinite;
 }
 
 @keyframes moving {
