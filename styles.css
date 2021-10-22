@@ -56,19 +56,31 @@ a:hover{
     width: 100%;
     height: 400px;
     display: block; 
-    position: absolute;
+    position: fixed;
 }
 
 .banner,
-img {
+.moving-banner {
     width: 100%;
     height: 400px;
     top: 0;
     left: 0;
     display: block;
-    position: relative;
+    position: absolute;
+    box-sizing: content-box;
     background-size: cover;
+    animation: moving 30s linear infinite;
 }
+
+@keyframes moving {
+    from {
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(-300px)
+    }
+}
+
 
 h1 {
     color: yellow;
