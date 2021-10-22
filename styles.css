@@ -47,6 +47,7 @@ a:hover{
     font-weight: bold;
     align-items: center;
     letter-spacing: 4px;
+    line-height: 50px;
 }
 
 .banner {
