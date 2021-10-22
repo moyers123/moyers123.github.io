@@ -22,13 +22,18 @@ li {
     color: white;
     font-size: 16px;
     text-transform: capitalize;
-    text-decoration: none;
     display: inline-block;
     letter-spacing: 2px;
     padding: 20px 10px;
 }
 
-li a:hover{
+li,
+a {
+    text-decoration: none;
+}
+
+li, 
+a:hover{
     color: yellow;
     
 }
