@@ -78,7 +78,7 @@ a:hover{
         transform: translateY(0)
     }
     to {
-        transform: translateY(-100px)
+        transform: translateY(-200px)
     }
 }
 
