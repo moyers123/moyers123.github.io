@@ -79,7 +79,7 @@ a:hover{
     background-position: center;
     animation: moving 60s linear infinite alternate;
     object-fit: cover;
-    overflow: clip clip;
+    overflow: hidden;
 }
 
 @keyframes moving {
