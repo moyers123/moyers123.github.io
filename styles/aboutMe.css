@@ -1,0 +1,26 @@
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(233, 233, 233);
+}
+
+p {
+    color: rgb(233, 233, 233);
+    letter-spacing: 1px;
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    max-width: 500px;
+    padding: 0 10px 0 10px;
+
+}
+
+img {
+    max-width: 300px; 
+    height: auto; 
+    display: inline-block;
+
+}
