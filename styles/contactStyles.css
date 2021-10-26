@@ -3,5 +3,9 @@
     padding: 15% 10px 10px 10px;
     text-align: center;
     justify-content: center;
+}
+
+.container,
+.h5 {
     font-color: rgb(233, 233, 233);
 }
