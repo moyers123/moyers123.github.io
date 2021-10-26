@@ -73,7 +73,7 @@ a:hover{
     background-size: cover;
     height: 100%;
     width: 100%;
-    animation: moving 10s linear infinite alternate;
+    animation: moving 60s linear infinite alternate;
 }
 
 @keyframes moving {
