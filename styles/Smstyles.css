@@ -10,6 +10,6 @@
 }
 
 .buttons,
-a:hover {
+svg:hover {
     color: yellow;
 }
