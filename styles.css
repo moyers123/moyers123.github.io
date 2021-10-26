@@ -21,7 +21,6 @@ header {
     background-color: skyblue;
     z-index: 10;
     width: 100%;
-    position: fixed;
 }
 
 ul {
