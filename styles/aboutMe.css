@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(233, 233, 233);
-    margin: 10px 0 10px 0;
 }
 
 p {
@@ -23,5 +22,6 @@ img {
     max-width: 300px; 
     height: auto; 
     display: inline-block;
+    padding: 10px 0 10px 0;
 
 }
