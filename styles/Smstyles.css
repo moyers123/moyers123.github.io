@@ -8,15 +8,3 @@
     z-index: 10;
     letter-spacing: 100px;;
 }
-
-.buttons,
-svg {
-   max-height: 100px;
-   max-width: 100px;
-   transition: max-height 1000ms linear; 
-}
-
-.buttons,
-svg:hover{
-    max-height: 150px;
-}
