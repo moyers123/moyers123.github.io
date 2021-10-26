@@ -5,7 +5,6 @@
     justify-content: center;
 }
 
-.container,
-h5 {
+.container h5 {
     font-color: rgb(233, 233, 233);
 }
