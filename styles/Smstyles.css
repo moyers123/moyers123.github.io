@@ -1,4 +1,4 @@
-.icons {
+.buttons {
     padding: 10px 10px 10px 10px;
     text-align: center;
     justify-content: center;
@@ -6,11 +6,4 @@
     background-color: pink;
     display: inline-block;
     z-index: 10;
-}
-
-.icons,
-img {
-    width: 75px;
-    height: 75px;
-    display: inline-block;
 }
