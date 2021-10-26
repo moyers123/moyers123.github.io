@@ -10,6 +10,13 @@
 }
 
 .buttons,
-svg:hover {
-    color: yellow;
+svg {
+   max-height: 100px;
+   max-width: 100px;
+   transition: max-height 1000ms linear; 
+}
+
+.buttons,
+svg:hover{
+    max-height: 150px;
 }
