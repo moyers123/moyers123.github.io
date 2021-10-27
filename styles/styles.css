@@ -38,9 +38,3 @@ body {
         transform: translateY(-150px)
     }
 }
-
-footer {
-    bottom: 0;
-    position: fixed;
-    z-index: 10;
-}
