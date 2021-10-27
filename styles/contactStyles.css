@@ -5,10 +5,12 @@
     justify-content: center;
 }
 
-.container .resume {
+.container,
+.resume {
     justify-content: space-around;
 }
-.container .emailButton{
+.container,
+.emailButton {
     justify-content: space-around;
 }
 
