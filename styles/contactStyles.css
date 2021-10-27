@@ -6,10 +6,10 @@
 }
 
 .container .resume {
-    right: 20px;
+    justify-content: space-around;
 }
 .container .emailButton{
-    left: 20px;
+    justify-content: space-around;
 }
 
 .container h5 {
