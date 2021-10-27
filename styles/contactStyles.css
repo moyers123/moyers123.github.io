@@ -1,9 +1,15 @@
 .container {
     display: flex;
     padding: 15% 10% 10px 10%;
-    margin: 0 20px 0 20px;
     text-align: center;
     justify-content: center;
+}
+
+.container .resume {
+    right: 20px;
+}
+.container .emailButton{
+    left: 20px;
 }
 
 .container h5 {
