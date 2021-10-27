@@ -12,4 +12,5 @@
 .emailForm {
     color: rgb(233, 233, 233);
     text-align: center;
+    justify-content: left;
 }
