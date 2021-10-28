@@ -1,6 +1,5 @@
 html {
-    color: rgb(233, 233, 233);
-}
+    color: black;
 
 table {
     height: 40%;
@@ -24,18 +23,15 @@ table {
     border-bottom: 1px solid #FFF;
   }
   
-  #preview {
-    width: 50px;
+  th, td {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px;
+    text-align: left;
   }
 
-  #information {
-    width: 150px;
-  }
 
-  #date {
-    width: 100px;
-  }
 
   td {
-    height: 50px;
+    height: 30px;
   }
