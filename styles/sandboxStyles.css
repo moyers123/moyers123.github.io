@@ -12,6 +12,7 @@ table {
 
   .info {
     width: 200px;
+    overflow-y: scroll;
   }
 
   .date {
