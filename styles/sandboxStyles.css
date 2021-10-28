@@ -28,7 +28,7 @@ table {
   }
 
   th, .preview {
-    width: 50px;
+    max-width: 50px;
   }
 
 
