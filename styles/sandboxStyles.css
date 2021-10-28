@@ -19,11 +19,6 @@ table {
     text-transform: uppercase;
   }
   
-  tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
-  }
-  
   #preview {
     width: 50px;
   }
