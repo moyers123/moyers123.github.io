@@ -3,6 +3,10 @@
   color: rgb(233, 233, 233);
 }
 
+body::-webkit-scrollbar {
+  width: 1em;
+} 
+
 table {
     height: 40%;
     padding: 5% 0 5% 20%;
