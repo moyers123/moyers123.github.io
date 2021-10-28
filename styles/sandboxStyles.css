@@ -7,7 +7,7 @@ table {
   }
   
   .preview {
-    width: 50px;
+    width: 20px;
   }
 
   .info {
@@ -39,7 +39,6 @@ table {
   th, td {
     font-weight: 400;
     font-size: 18px;
-    padding: 20px;
-    text-align: left;
+    text-align: center;
   }
 
