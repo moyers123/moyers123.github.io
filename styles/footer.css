@@ -3,4 +3,5 @@ footer {
     position: fixed;
     z-index: 10;
     color: rgb(233, 233, 233);
+    width: 100%
 }
