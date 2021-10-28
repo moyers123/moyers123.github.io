@@ -20,7 +20,7 @@ table {
   }
 
   td {
-    height: 50px;
+    max-height: 50px;
   }
 
   thead th {
