@@ -24,14 +24,18 @@ table {
     border-bottom: 1px solid #FFF;
   }
   
-  th, td {
-    font-weight: 400;
-    font-size: 18px;
-    padding: 20px;
-    text-align: left;
-    width: 33.3333%;
+  #preview {
+    width: 50px;
+  }
+
+  #information {
+    width: 150px;
+  }
+
+  #date {
+    width: 100px;
   }
 
   td {
-    height: 30px;
+    height: 50px;
   }
