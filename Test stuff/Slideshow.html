@@ -1,17 +1,13 @@
-<script>
-    let time = 2000;
+let time = 60000;
 
-    function changeImg() {
-        let i = Math.floor(Math.random()* 37);
-        if(i > 0 && i < 6){
-            document.getElementById('slide').src = `Pictures/Slideshow/${i}.jpg`;
-        } else {
-            document.getElementById('slide').src = `Pictures/Slideshow/${i}.JPG`;
-        }
-        setTimeout('changeImg()', time);
-    }
+            function changeImg() {
+                let i = Math.floor(Math.random()* 37);
+                if(i > 0 && i < 6){
+                    document.getElementById('slides').style.backgroundImage = `url(Pictures/Slideshow/${i}.jpg)`;
+                } else {
+                    document.getElementById('slides').style.backgroundImage = `url(Pictures/Slideshow/${i}.JPG)`;
+                }
+                setTimeout('changeImg()', time);
+            }
 
-window.onload = changeImg;
-</script>
-
-<img id='slide'>
+        window.onload = changeImg;
