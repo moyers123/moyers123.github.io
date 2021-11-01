@@ -1,13 +1,15 @@
-let time = 60000;
+<script>
+    let time = 60000;
 
-            function changeImg() {
-                let i = Math.floor(Math.random()* 37);
-                if(i > 0 && i < 6){
-                    document.getElementById('slides').style.backgroundImage = `url(Pictures/Slideshow/${i}.jpg)`;
-                } else {
-                    document.getElementById('slides').style.backgroundImage = `url(Pictures/Slideshow/${i}.JPG)`;
-                }
-                setTimeout('changeImg()', time);
+        function changeImg() {
+            let i = Math.floor(Math.random()* 37);
+            if(i > 0 && i < 6){
+                document.getElementById('slides').style.backgroundImage = `url(Pictures/Slideshow/${i}.jpg)`;
+            } else {
+                document.getElementById('slides').style.backgroundImage = `url(Pictures/Slideshow/${i}.JPG)`;
             }
+            setTimeout('changeImg()', time);
+        }
 
-        window.onload = changeImg;
+    window.onload = changeImg;
+</script>
