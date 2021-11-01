@@ -1,9 +1,9 @@
 setInterval(setClock, 1000)
 
 //document.querySelector will target the attribute in the html (html src is linked to this JS sheet)//
-const hourHand = document.querySelector(['data-hour-hand']);
-const minuteHand = document.querySelector(['data-minute-hand']);
-const secondHand = document.querySelector(['data-second-hand']);
+const hourHand = document.querySelector(['#data-hour-hand']);
+const minuteHand = document.querySelector(['#data-minute-hand']);
+const secondHand = document.querySelector(['#data-second-hand']);
 
 function setClock() {
     const currentDate = new Date();
