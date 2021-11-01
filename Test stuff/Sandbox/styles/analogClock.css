@@ -22,12 +22,12 @@ body {
 }
 
 .clock .number {
-    --rotation: 0;
+    --numRotation: 0;
     position: absolute;
     width: 100%;
     height: 100%;
     text-align: center;
-    transform: rotate(var(--rotation));
+    transform: rotate(var(--numRotation));
     font-size: 1.5rem;
 }
 
