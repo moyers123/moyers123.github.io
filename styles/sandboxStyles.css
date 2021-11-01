@@ -16,7 +16,8 @@ table {
   }
   
   .preview {
-    width: 50px;
+    max-width: 50px;
+    height: auto;
   }
 
   .info {
