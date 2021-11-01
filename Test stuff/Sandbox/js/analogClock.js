@@ -7,9 +7,9 @@ const secondHand = document.querySelector(['data-second-hand']);
 
 function setClock() {
     const currentDate = new Date(hours, minutes, seconds);
-    const secondsRatio = currentDate.getSeconds() / 60;
-    const minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
-    const hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
+    const secondsRatio = (currentDate.getSeconds() / 60);
+    const minutesRatio = ((secondsRatio + currentDate.getMinutes()) / 60);
+    const hoursRatio = ((minutesRatio + currentDate.getHours()) / 12);
     setRotation(secondHand, secondsRatio);
     setRotation(minuteHand, minutesRatio);
     setRotation(hourHand, hoursRatio);
