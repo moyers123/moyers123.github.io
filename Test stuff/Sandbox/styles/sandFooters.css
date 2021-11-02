@@ -1,6 +1,6 @@
 footer {
     bottom: 0;
-    float: right;
+    left: 0;
     display: inline-block;
     position: fixed;
     z-index: 10;
