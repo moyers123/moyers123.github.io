@@ -58,4 +58,5 @@ body {
 #info {
     width: 500px;
     gap: 2rem;
+    text-decoration: none;
 }
