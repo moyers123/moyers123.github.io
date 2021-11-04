@@ -8,7 +8,7 @@
 }
 
 .buttons .facebook {
-    justify-content: space-between;
+    margin: 0 0 0 50px;
 }
 
 .buttons path:hover{
