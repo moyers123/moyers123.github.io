@@ -9,21 +9,21 @@
 }
 
 .buttons .facebook:hover{
-    transition: transform 1s;
+    transition: transform 1s linear;
     transform: rotate(30deg);
 }
 
 .buttons .instagram:hover{
-    transition: transform 1s;
+    transition: transform 1s linear;
     transform: rotate(30deg);
 }
 
 .buttons .github:hover{
-    transition: transform 1s;
+    transition: transform 1s linear;
     transform: rotate(30deg);
 }
 
 .buttons .linkedin:hover{
-    transition: transform 1s;
+    transition: transform 1s linear;
     transform: rotate(30deg);
 }
