@@ -55,7 +55,7 @@ body {
     pointer-events: auto;
 }
 
-.info-grid {
+#info-grid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 2rem;
