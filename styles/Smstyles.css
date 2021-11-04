@@ -6,6 +6,7 @@
     display: flex;
     z-index: 10;
     justify-content: space-between;
+    margin: 0 5% 0 5%;
 }
 
 .buttons .facebook:hover{
