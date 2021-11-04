@@ -7,11 +7,7 @@
     z-index: 10;
 }
 
-.buttons .facebook {
-    margin: 0 0 0 50px;
-}
-
-.buttons path:hover{
+.buttons .facebook:hover{
     width: 50%;
     height: auto;
 }
