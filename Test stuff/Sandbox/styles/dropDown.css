@@ -19,6 +19,13 @@ body {
     font-size: 24px;
 }
 
+.wiki {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
 .dropDown.active > .link,
 .link:hover {
     color: yellow;
