@@ -36,10 +36,13 @@ body {
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     opacity: 0;
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transform: translateY(-10px);
 }
 
 .dropDown > .link:focus + .dropDownManga {
     opacity: 1;
+    transform: translateY(0);
 }
 
 .dropDownManga.active {
