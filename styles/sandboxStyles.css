@@ -62,3 +62,7 @@ table {
     color: red;
   }
 
+  tbody, p {
+    color: black;
+  }
+
