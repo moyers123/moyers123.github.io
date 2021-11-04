@@ -58,3 +58,7 @@ table {
     height: auto;
   }
 
+  tbody, a:hover {
+    color: red;
+  }
+
