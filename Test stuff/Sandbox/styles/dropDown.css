@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: red;
+    display: flex;
+    align-items: baseline;
+    padding: 5px;
+}
+
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: blue;
+    padding: 0;
+}
+
+.link:hover {
+    color: yellow;
+}
