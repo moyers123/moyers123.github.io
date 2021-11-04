@@ -4,18 +4,19 @@
         <title> Drop Down Bar</title>
         <link rel='stylesheet' href='Sandbox\styles\dropDown.css'>
         <link rel='stylesheet' href='Sandbox\styles\sandFooters.css'>
+        <script type='text/javascript' src='Sandbox\js\dropDown.js' defer></script>
     </head>
     <body>
         <div class='header'>
-            <div class="dropDown">
-                <button class='link'> Manga </button>
+            <div class="dropDown" data-dropdown>
+                <button class='link' data-dropdown-button> Manga </button>
                 <div class='dropDownManga'>
                     Manga
                 </div>
             </div>
 
-            <button class='link'> Anime </button>
-            <button class='link'> Music </button>
+            <button class='link' data-dropdown-button> Anime </button>
+            <button class='link' data-dropdown-button> Music </button>
         </div>
     </body>
 
