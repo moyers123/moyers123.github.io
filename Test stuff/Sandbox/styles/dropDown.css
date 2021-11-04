@@ -42,8 +42,14 @@ body {
     transform: translateY(-10px);
 }
 
-.dropDown.active > .link + .dropDownManga {
+.dropDown.active > .link + .dropDownMenu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
 }
