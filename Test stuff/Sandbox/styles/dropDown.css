@@ -5,7 +5,7 @@ body {
 .header {
     background-color: rgb(48, 45, 45);
     display: flex;
-    align-items: baseline;
+    align-items: left;
     justify-content: space-around;
     padding: 5px;
     font-size: 20px;
