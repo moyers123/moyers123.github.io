@@ -5,8 +5,7 @@
     background-color: rgb(22, 22, 22);
     display: flex;
     z-index: 10;
-    justify-content: space-between;
-    margin: 0 5% 0 5%;
+    justify-content: space-around;
 }
 
 .buttons .facebook:hover{
