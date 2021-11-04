@@ -20,3 +20,11 @@ body {
 .link:hover {
     color: yellow;
 }
+
+.dropDown {
+    position: relative;
+}
+
+.dropDownManga {
+    position: absolute;
+}
