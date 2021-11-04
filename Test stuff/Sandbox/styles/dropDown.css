@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:rgb(201, 201, 201);
+    overflow: hidden;
 }
 
 .header {
@@ -13,7 +14,6 @@ body {
     transform: translateX(-10%);
     padding: 5px;
     font-size: 20px;
-    overflow-x: hidden;
 }
 
 .link {
