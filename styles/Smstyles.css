@@ -10,5 +10,5 @@
 .buttons .facebook:hover{
     width: 80px;
     height: auto;
-    rotate: 30deg;
+    transform: rotate(30deg);
 }
