@@ -9,19 +9,7 @@
     letter-spacing: 100px;;
 }
 
-.buttons path:nth-child(1){
-    stroke-dasharray: 200px;
-    stroke-dashoffset: 50px;
-}
-
-.buttons path:nth-child(2){
-    stroke-dasharray: 100px;
-}
-
-.buttons path:nth-child(3){
-    stroke-dasharray: 100px;
-}
-
-.buttons path:nth-child(4){
-    stroke-dasharray: 100px;
+.buttons path:hover{
+    width: 50%;
+    height: auto;
 }
