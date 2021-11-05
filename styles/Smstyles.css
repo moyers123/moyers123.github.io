@@ -9,22 +9,22 @@
 }
 
 .buttons .facebook:hover{
-    transition: transform 1s linear;
+    transition: transform .5s linear;
     transform: rotate(30deg);
 }
 
-.buttons .facebook:hover::after {
-    transition: transform 1s linear;
+.buttons .facebook:hover:after {
+    transition: transform .5s linear;
     transform: rotate(-30deg);
 }
 
 .buttons .instagram:hover{
-    transition: transform 1s linear;
+    transition: transform .5s linear;
     transform: rotate(30deg);
 }
 
 .buttons .github:hover{
-    transition: transform 1s linear;
+    transition: transform .5s linear;
     transform: rotate(30deg);
 }
 
