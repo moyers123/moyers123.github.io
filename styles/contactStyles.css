@@ -9,6 +9,12 @@
 .resume {
     justify-content: space-around;
 }
+
+.container .resume:hover{
+    transition: transform 0.5s linear;
+    transform: rotate(-30deg);
+}
+
 .container,
 .emailButton {
     justify-content: space-around;
@@ -21,9 +27,4 @@
 .emailForm {
     color: rgb(233, 233, 233);
     text-align: center;
-}
-
-.container #resume:hover {
-    transition: transform 0.5s linear;
-    transform: rotate(-30deg);
 }
