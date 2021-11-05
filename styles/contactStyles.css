@@ -10,12 +10,6 @@
     justify-content: space-around;
 }
 
-.container .resume:hover{
-    transition: width 0.5s linear;
-    width: 90px;
-    height: auto;
-}
-
 .container,
 .emailButton {
     justify-content: space-around;
