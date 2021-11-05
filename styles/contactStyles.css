@@ -11,8 +11,8 @@
 }
 
 .container .resume:hover{
-    transition: width 0.5s linear;
-    width: 80px;
+    transition: max-width 0.5s linear;
+    max-width: 90px;
 }
 
 .container,
