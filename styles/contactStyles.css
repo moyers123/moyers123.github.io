@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.resume #resume:hover {
+.container #resume:hover {
     transition: transform 0.5s linear;
     transform: rotate(-30deg);
 }
