@@ -13,6 +13,11 @@
     transform: rotate(30deg);
 }
 
+.buttons .facebook:hover::after {
+    transition: transform 1s linear;
+    transform: rotate(-30deg);
+}
+
 .buttons .instagram:hover{
     transition: transform 1s linear;
     transform: rotate(30deg);
