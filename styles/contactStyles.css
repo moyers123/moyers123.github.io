@@ -10,9 +10,9 @@
     justify-content: space-around;
 }
 
-.container #resume:hover{
-    transition: transform 0.5s linear;
-    transform: rotate(30deg);
+.container .resume:hover{
+    transition: width 0.5s linear;
+    width: 80px;
 }
 
 .container,
