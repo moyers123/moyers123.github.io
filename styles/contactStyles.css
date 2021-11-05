@@ -22,3 +22,8 @@
     color: rgb(233, 233, 233);
     text-align: center;
 }
+
+.resume #resume:hover {
+    transition: transform 0.5s linear;
+    transform: rotate(-30deg);
+}
