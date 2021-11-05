@@ -10,9 +10,9 @@
     justify-content: space-around;
 }
 
-.container .resume:hover{
+.container #resume:hover{
     transition: transform 0.5s linear;
-    transform: rotate(-30deg);
+    transform: rotate(30deg);
 }
 
 .container,

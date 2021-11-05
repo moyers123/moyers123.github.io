@@ -13,11 +13,6 @@
     transform: rotate(30deg);
 }
 
-.buttons .facebook:hover:after {
-    transition: transform 0.5s linear;
-    transform: rotate(-30deg);
-}
-
 .buttons .instagram:hover{
     transition: transform 0.5s linear;
     transform: rotate(30deg);
@@ -29,6 +24,6 @@
 }
 
 .buttons .linkedin:hover{
-    transition: transform 1s linear;
+    transition: transform 0.5s linear;
     transform: rotate(30deg);
 }
