@@ -41,3 +41,11 @@ const deleteButton = document.querySelectorAll('[data-delete]');
 const previousTextElement = document.querySelectorAll('[data-previous]');
 const currentTextElement = document.querySelectorAll('[data-current]');
 
+const calculator = new Calculator (previousTextElement, currentTextElement);
+
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.appendNumber(button.innerText)
+        calculator.display()
+    })
+})
