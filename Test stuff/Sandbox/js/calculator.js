@@ -21,6 +21,9 @@ class Calculator{
     }
 
     chooseOperation(operation) {
+        this.operation = operation;
+        this.operation = this.current;
+        this.current = '';
 
     }
 
@@ -29,7 +32,8 @@ class Calculator{
     }
 
     display() {
-
+        this.currentTextElement.innerText = this.current;
+        this.previousTextElement.innerText = this.previous;
     }
 }
 
@@ -47,6 +51,13 @@ const calculator = new Calculator (previousTextElement, currentTextElement);
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText)
+        calculator.display()
+    })
+})
+
+operationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        calculator.chooseOperation(button.innerText)
         calculator.display()
     })
 })
