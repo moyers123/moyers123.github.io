@@ -58,10 +58,35 @@ class Calculator{
         this.previous = '';
     }
 
+    getDisplayNumber(number) {
+        const stringNumber = number.toString()
+        const integerDigits = parseFloat(stringNumber.split('.')[0])
+        const decimalDigits = stringNumber.split('.')[1]
+        let integerDisplay
+        if(isNaN(integerDisplay)) {
+            integerDisplay = '';
+        } else {
+            integerDisplay = integerDigits.toLocaleString('en', {
+            maximumFractionDigits: 0
+            })
+        }
+        if (decimalDigits != null) {
+            return `${integerDisplay}.${decimalDigits}`;
+        } else {
+            return integerDisplay;
+        }
+        //does not work well with decimals//
+        /*const floatNumber = parseFloat(number)
+        if (isNaN(floatNumber)) return '';
+        return floatNumber.toLocaleString('en')*/
+    }
+
     display() {
-        this.currentTextElement.innerText = this.current;
+        this.currentTextElement.innerText = this.getDisplayNumber(this.current)
         if (this.operation != null){
-            this.previousTextElement.innerText = `${this.previous} ${this.operation}`
+            this.previousTextElement.innerText = `${this.getDisplayNumber(this.previous)} ${this.operation}`
+        } else {
+            this.previousTextElement.innerText = '';
         }
     }
 }
