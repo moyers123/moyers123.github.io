@@ -13,7 +13,6 @@ class Calculator{
 
     delete() {
         this.current = this.current.toString().slice(0, -1)
-
     }
 
     appendNumber(number) {
@@ -29,11 +28,10 @@ class Calculator{
         this.operation = operation;
         this.previous = this.current;
         this.current = '';
-
     }
 
     compute() {
-        let computation;
+        let computation
         const prev = parseFloat(this.previous);
         const curr = parseFloat(this.current);
         if (isNaN(prev) || isNaN(curr)) return
@@ -66,9 +64,7 @@ class Calculator{
         if(isNaN(integerDisplay)) {
             integerDisplay = '';
         } else {
-            integerDisplay = integerDigits.toLocaleString('en', {
-            maximumFractionDigits: 0
-            })
+            integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
         }
         if (decimalDigits != null) {
             return `${integerDisplay}.${decimalDigits}`;
@@ -82,9 +78,11 @@ class Calculator{
     }
 
     display() {
-        this.currentTextElement.innerText = this.getDisplayNumber(this.current)
+        this.currentTextElement.innerText = 
+        this.getDisplayNumber(this.current)
         if (this.operation != null){
-            this.previousTextElement.innerText = `${this.getDisplayNumber(this.previous)} ${this.operation}`
+            this.previousTextElement.innerText = 
+            `${this.getDisplayNumber(this.previous)} ${this.operation}`
         } else {
             this.previousTextElement.innerText = '';
         }
@@ -94,12 +92,13 @@ class Calculator{
 //variables to select everything in the html//
 const numberButtons = document.querySelectorAll('[data-number]');
 const operationButtons = document.querySelectorAll('[data-operation]');
-const allClearButton = document.querySelectorAll('[data-AC]');
-const equalsButton = document.querySelectorAll('[data-equals]');
-const deleteButton = document.querySelectorAll('[data-delete]');
-const previousTextElement = document.querySelectorAll('[data-previous]');
-const currentTextElement = document.querySelectorAll('[data-current]');
+const allClearButton = document.querySelector('[data-AC]');
+const equalsButton = document.querySelector('[data-equals]');
+const deleteButton = document.querySelector('[data-delete]');
+const previousTextElement = document.querySelector('[data-previous]');
+const currentTextElement = document.querySelector('[data-current]');
 
+//clicking//
 const calculator = new Calculator (previousTextElement, currentTextElement);
 
 numberButtons.forEach(button => {
