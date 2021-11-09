@@ -21,8 +21,12 @@ class Calculator{
     }
 
     chooseOperation(operation) {
+        if (this.current === '') return;
+        if (this.previous !== '') {
+            this.compute()
+        }
         this.operation = operation;
-        this.operation = this.current;
+        this.previous = this.current;
         this.current = '';
 
     }
