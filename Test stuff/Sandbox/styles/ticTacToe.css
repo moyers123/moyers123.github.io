@@ -27,6 +27,10 @@ body {
     width: var(--cell-size);
     height: var(--cell-size);
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .cell:first-child,
@@ -47,4 +51,21 @@ body {
 .cell:nth-child(7),
 .cell:nth-child(8) {
     border-bottom: none;
+}
+
+.cell.x::before,
+.cell.x::after {
+    content: '';
+    width: calc(var(--mark-size) * .15);
+    height: var(--mark-size);
+    position: absolute;
+    background-color: black; 
+}
+
+.cell.x::before{
+    transform: rotate(45deg);
+}
+
+.cell.x::after{
+    transform: rotate(-45deg);
 }
