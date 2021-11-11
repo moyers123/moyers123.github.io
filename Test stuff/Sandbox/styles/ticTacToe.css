@@ -68,7 +68,7 @@ body {
 .board.x .cell:not(.x):not(.o):hover::before,
 .board.x .cell:not(.x):not(.o):hover::after,
 .board.o .cell:not(.x):not(.o):hover::before {
-    background-color: rgb(80, 124, 141);
+    background-color: lightgrey;
 }
 
 .cell.x::before,
@@ -111,5 +111,5 @@ body {
 .board.o .cell:not(.x):not(.o):hover::after {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size) * .7);
-    background-color: skyblue;
+    background-color: white;
 }
