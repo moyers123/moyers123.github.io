@@ -132,7 +132,7 @@ body {
 .winning-message button {
     font-size: 3rem;
     background-color: white;
-    border 1px solid black;
+    border: 1px solid black;
     padding: .25em .5em;
     cursor: pointer;
 }
