@@ -60,6 +60,16 @@ body {
 }
 
 .cell.x::before,
+.cell.x::after{
+    background-color: black;
+}
+
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after {
+    background-color: lightgrey;
+}
+
+.cell.x::before,
 .cell.x::after,
 .board.x .cell:not(.x):not(.o):hover::before,
 .board.x .cell:not(.x):not(.o):hover::after {
