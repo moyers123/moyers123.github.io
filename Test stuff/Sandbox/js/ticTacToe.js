@@ -4,16 +4,22 @@ const cellElements = document.querySelectorAll('[data-cell]');
 const board = document.getElementById('board')
 let oTurn;
 
-cellElements.forEach(cell => {
-    cell.addEventListener('click', handleClick, {once: true })
-})
+start();
+
+function start() {
+    oTurn = false;
+    cellElements.forEach(cell => {
+        cell.addEventListener('click', handleClick, {once: true })
+    })
+    setBoardHoverClass();
+}
 
 function handleClick(event) {
     const cell = event.target;
     const currentClass = oTurn ? o_class : x_class;
     placeMark(cell, currentClass)
-    swapTurns()
-    setBoardHoverClass()
+    swapTurns();
+    setBoardHoverClass();
 }
 
 function placeMark(cell, currentClass) {
