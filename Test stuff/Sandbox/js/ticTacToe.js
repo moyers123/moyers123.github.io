@@ -15,15 +15,22 @@ const cellElements = document.querySelectorAll('[data-cell]');
 const board = document.getElementById('board')
 const winningMessageElement = document.getElementById('winningMessage')
 let oTurn;
+const restartButton = document.getElementById('restartButton')
 
 start();
+
+restartButton.addEventListener('click', start)
 
 function start() {
     oTurn = false;
     cellElements.forEach(cell => {
+        cell.classList.remove(x_class)
+        cell.classList.remove(o_class)
+        cell.removeEventListener('click', handleClick)
         cell.addEventListener('click', handleClick, {once: true })
     })
     setBoardHoverClass();
+    winningMessageElement.classList.remove('show')
 }
 
 function handleClick(event) {
