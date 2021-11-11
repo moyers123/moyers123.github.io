@@ -76,8 +76,7 @@ body {
     content: '';
     width: calc(var(--mark-size) * .15);
     height: var(--mark-size);
-    position: absolute;
-    background-color: black; 
+    position: absolute; 
 }
 
 .cell.x::before,
