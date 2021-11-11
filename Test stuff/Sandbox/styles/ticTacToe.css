@@ -113,3 +113,7 @@ body {
     height: calc(var(--mark-size) * .7);
     background-color: white;
 }
+
+.cell.o::before {
+    background-color: black;
+}
