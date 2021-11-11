@@ -9,6 +9,7 @@
 
 body {
     margin: 0;
+    background: linear-gradient(to right, teal, skyblue)
 }
 
 .board {
