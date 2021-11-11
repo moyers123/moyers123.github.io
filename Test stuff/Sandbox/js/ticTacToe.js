@@ -32,18 +32,27 @@ function handleClick(event) {
     placeMark(cell, currentClass)
     if (checkWin(currentClass)) {
         end(false)
+    } else if (isDraw()) {
+        end(true)
+    } else {
+        swapTurns();
+        setBoardHoverClass();
     }
-    swapTurns();
-    setBoardHoverClass();
 }
 
 function end(draw) {
     if (draw) {
-
+        winningMessageElement.innerText = 'Draw!'
     } else {
         winningMessageTextElement.innerText = `${oTurn ? "O's" : "X's"} Win!`;
     }
     winningMessageElement.classList.add('show')
+}
+
+function isDraw() {
+    return [...cellElements].every(cell => {
+        return cell.classList.contains(x_class || cell.classList.contains(o_class))
+    })
 }
 
 function placeMark(cell, currentClass) {
