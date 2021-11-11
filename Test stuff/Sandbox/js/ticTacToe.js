@@ -12,6 +12,7 @@ function handleClick(event) {
     const currentClass = oTurn ? o_class : x_class;
     placeMark(cell, currentClass)
     swapTurns()
+    console.log('clicked')
 }
 
 function placeMark(cell, currentClass) {
