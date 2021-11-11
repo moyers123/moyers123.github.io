@@ -87,5 +87,5 @@ body {
 .cell.o::after {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size) * .7);
-    opacity: 0;
+    background-color: linear-gradient(to right, teal, skyblue)
 }
