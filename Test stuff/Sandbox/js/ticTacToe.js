@@ -1,7 +1,19 @@
 const x_class = 'x';
 const o_class = 'o';
+const win_combos = [
+    [0, 1, 2]
+    [3, 4, 5]
+    [6, 7, 8]
+    [0, 3, 6]
+    [1, 4, 7]
+    [2, 5, 8]
+    [0, 4, 8]
+    [2, 4, 6]
+]
+const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 const cellElements = document.querySelectorAll('[data-cell]');
 const board = document.getElementById('board')
+const winningMessageElement = document.getElementById('winningMessage')
 let oTurn;
 
 start();
@@ -18,8 +30,20 @@ function handleClick(event) {
     const cell = event.target;
     const currentClass = oTurn ? o_class : x_class;
     placeMark(cell, currentClass)
+    if (checkWin(currentClass)) {
+        end(false)
+    }
     swapTurns();
     setBoardHoverClass();
+}
+
+function end(draw) {
+    if (draw) {
+
+    } else {
+        winningMessageTextElement.innerText = `${oTurn ? "O's" : "X's"} Win!`;
+    }
+    winningMessageElement.classList.add('show')
 }
 
 function placeMark(cell, currentClass) {
@@ -38,4 +62,12 @@ function setBoardHoverClass() {
     } else {
         board.classList.add(x_class);
     }
+}
+
+function checkWin(currentClass) {
+    return win_combos.some(combo => {
+        return combo.every(index => {
+            return cellElements[index].classList.contains(currentClass)
+        })
+    })
 }
