@@ -8,7 +8,7 @@ const win_combos = [
     [1, 4, 7],
     [2, 5, 8],
     [0, 4, 8],
-    [2, 4, 6],
+    [2, 4, 6]
 ];
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 const cellElements = document.querySelectorAll('[data-cell]');
