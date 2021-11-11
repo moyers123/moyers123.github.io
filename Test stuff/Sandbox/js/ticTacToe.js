@@ -1,6 +1,6 @@
 const x_class = 'x';
 const o_class = 'o';
-const cellElements = document.querySelectorAll(['data-cell']);
+const cellElements = document.querySelectorAll('[data-cell]');
 let oTurn;
 
 cellElements.forEach(cell => {
