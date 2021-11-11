@@ -42,7 +42,7 @@ function handleClick(event) {
 
 function end(draw) {
     if (draw) {
-        winningMessageElement.innerText = 'Draw!'
+        winningMessageTextElement.innerText = 'Draw!'
     } else {
         winningMessageTextElement.innerText = `${oTurn ? "O's" : "X's"} Win!`;
     }
@@ -51,7 +51,7 @@ function end(draw) {
 
 function isDraw() {
     return [...cellElements].every(cell => {
-        return cell.classList.contains(x_class || cell.classList.contains(o_class))
+        return cell.classList.contains(x_class) || cell.classList.contains(o_class)
     })
 }
 
