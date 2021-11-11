@@ -30,7 +30,7 @@ body {
 
 .cell:first-child,
 .cell:nth-child(2),
-.cell:first-child(3) {
+.cell:nth-child(3) {
     border-top: none;
 }
 
@@ -44,6 +44,6 @@ body {
 
 .cell:last-child,
 .cell:nth-child(7),
-.cell:first-child(8) {
+.cell:nth-child(8) {
     border-bottom: none;
 }
