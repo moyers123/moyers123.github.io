@@ -67,12 +67,12 @@ class Calculator{
             integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
         }
         if (decimalDigits != null) {
-            return `${integerDigits}.${decimalDigits}`;
+            return `${integerDisplay}.${decimalDigits}`;
         } else {
-            return integerDigits;
+            return integerDisplay;
         }
-        //does not work well with decimals//
-        /*const floatNumber = parseFloat(number)
+        /*does not work well with decimals:
+        const floatNumber = parseFloat(number)
         if (isNaN(floatNumber)) return '';
         return floatNumber.toLocaleString('en')*/
     }
