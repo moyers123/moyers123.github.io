@@ -67,7 +67,7 @@ class Calculator{
             integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
         }
         if (decimalDigits != null) {
-            return `${integerDisplay}.${decimalDigits}`;
+            return `${integerDigits}.${decimalDigits}`;
         } else {
             return integerDisplay;
         }
