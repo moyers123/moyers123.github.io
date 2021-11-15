@@ -69,7 +69,7 @@ class Calculator{
         if (decimalDigits != null) {
             return `${integerDigits}.${decimalDigits}`;
         } else {
-            return integerDisplay;
+            return integerDigits;
         }
         //does not work well with decimals//
         /*const floatNumber = parseFloat(number)
