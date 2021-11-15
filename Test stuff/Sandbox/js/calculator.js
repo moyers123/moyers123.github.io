@@ -61,7 +61,7 @@ class Calculator{
         const integerDigits = parseFloat(stringNumber.split('.')[0])
         const decimalDigits = stringNumber.split('.')[1]
         let integerDisplay
-        if(isNaN(integerDisplay)) {
+        if(isNaN(integerDigits)) {
             integerDisplay = '';
         } else {
             integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
