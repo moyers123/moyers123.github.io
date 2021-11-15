@@ -64,13 +64,11 @@ ul {
     list-style-type: none;
 }
 
-ul,
-a {
+.myLinks {
     text-decoration: none;
     color: rgb(204, 204, 212);
 }
 
-ul,
-a:hover {
+.myLinks:hover {
     color: yellow;
 }
