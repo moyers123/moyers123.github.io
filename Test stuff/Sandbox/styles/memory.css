@@ -22,6 +22,8 @@ body {
 
 .game-info-container {
     grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .game-info {
@@ -33,7 +35,7 @@ body {
 
 .cards {
     background-color: blue;
-    height: 75px;
+    height: 175px;
     width: 125px;
 }
 
