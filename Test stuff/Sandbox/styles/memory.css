@@ -33,14 +33,15 @@ body {
     font-size: 4em;
 }
 
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+}
+
 .cards {
     background-color: blue;
     height: 175px;
     width: 125px;
 }
 
-.game-container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-}
