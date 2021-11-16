@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(white, skyblue);
+}
+
+.page-title {
+    color: red;
+    border: 2px solid  white;
+    font-family: Arial, serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
