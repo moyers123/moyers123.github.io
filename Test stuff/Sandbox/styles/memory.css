@@ -37,6 +37,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
 }
 
 .cards {
