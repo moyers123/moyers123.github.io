@@ -42,8 +42,31 @@ body {
 }
 
 .cards {
-    background-color: blue;
+    position: relative;
     height: 175px;
     width: 125px;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.card-back {
+    background-color: blue;
+    border-color: white;
+}
+
+.card-front {
+    transform: rotateX(180deg);
 }
 
