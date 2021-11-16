@@ -19,3 +19,26 @@ body {
     text-align: center;
     font-size: 6em;
 }
+
+.game-info-container {
+    grid-column: 1 / -1;
+}
+
+.game-info {
+    color: red;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-family: Arial, serif;
+    font-size: 4em;
+}
+
+.cards {
+    background-color: blue;
+    height: 75px;
+    width: 125px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+}
