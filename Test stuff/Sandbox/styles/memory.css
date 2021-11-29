@@ -88,12 +88,12 @@ body {
     align-items: center;
     width: auto;
     height: 50%;
-    transform: rotate(-15deg);
     transition: transform 100ms ease-in-out;
 }
 
 .card-back:hover .snowman {
     transform: rotate(30deg);
+    height: 60%;
 }
 
 .card-back {
