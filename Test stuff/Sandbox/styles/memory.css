@@ -84,7 +84,6 @@ body {
 }
 
 .snowman {
-    align-self: flex-start;
     justify-content: center;
     align-items: center;
     width: 50%;
