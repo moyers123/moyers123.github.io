@@ -113,7 +113,7 @@ body {
 
 .card-back {
     background-color: blue;
-    border: 2px solid white;
+    border: 2px solid red;
 }
 
 .card-front {
