@@ -86,14 +86,14 @@ body {
 .snowman {
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: auto;
-    transform: translateY(-10px);
+    width: auto;
+    height: 50%;
+    transform: rotate(-15deg);
     transition: transform 100ms ease-in-out;
 }
 
 .card-back:hover .snowman {
-    transform: translateY(0px);
+    transform: rotate(30deg);
 }
 
 .card-back {
