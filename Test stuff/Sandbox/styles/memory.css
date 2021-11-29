@@ -78,13 +78,15 @@ body {
 }
 
 .bottom-right-flakes {
-    transform: rotate(180deg);
+    transform: rotate(270deg);
     bottom: 0;
     right: 0;
 }
 
 .snowman {
     align-self: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: auto;
     transform: translateY(-10px);
