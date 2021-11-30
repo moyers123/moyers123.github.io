@@ -113,9 +113,17 @@ body {
 }
 
 .card-front {
-    background-color: greenyellow;
+    background-color: rgb(40, 235, 22);
     border: 2px solid red;
     transform: rotateY(180deg);
+}
+
+.value {
+    transform: scale(0.9);
+}
+
+.card-front:hover .value {
+    transform: scale(1);
 }
 
 .snow-flakes {
