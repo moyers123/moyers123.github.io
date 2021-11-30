@@ -33,7 +33,7 @@
       left: 0;
     }
     50% {
-      right: 0;
+      left: 125px;
       transform: rotate(90deg);
     }
     100% {
