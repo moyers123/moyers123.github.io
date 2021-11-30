@@ -44,6 +44,12 @@
     100% { transform: rotate(265deg); }
   }
 
+@keyframes dance {
+    0%, 100% {transform: rotate(0);}
+    25% {transform: rotate(-30deg);}
+    75% {transform: rotate(30deg);}
+}
+
 html {
     min-height: 100vh;
 }
@@ -90,6 +96,10 @@ body {
     width: 125px;
 }
 
+.cards:hover {
+    cursor: pointer;
+}
+
 .card-face {
     position: absolute;
     width: 100%;
@@ -105,12 +115,47 @@ body {
     transition: transform 500ms ease-in-out;
 }
 
-.cards:hover .card-back {
+.cards.visible .card-back {
     transform: rotateY(-180deg);
 }
 
-.cards:hover .card-front {
+.cards.visible .card-front {
     transform: rotateY(0);
+}
+
+.cards.match .value {
+    animation: dance 1s linear infinite 500ms;
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: red;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.overlay-text.visible {
+    display: flex;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(0, 0, 0, .8);
+        font-size: 10em;
+    }
 }
 
 .card-front {
