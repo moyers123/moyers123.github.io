@@ -111,6 +111,12 @@ body {
     height: 60%;
 }
 
+.card-back:hover .top-left-flakes {
+    transform: rotate(180deg);
+    top:0;
+    right:0;
+}
+
 .card-back {
     background-color: blue;
     border: 2px solid red;
