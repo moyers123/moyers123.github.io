@@ -81,6 +81,7 @@ body {
     grid-gap: 10px;
     margin: 50px;
     justify-content: center;
+    perspective: 500px;
 }
 
 .cards {
@@ -107,12 +108,14 @@ body {
     transform: rotateY(-180deg);
 }
 
-.cards.visible .card-front {
+.cards:hover .card-front {
     transform: rotateY(0);
 }
 
 .card-front {
-    transform: rotateX(180deg);
+    background-color: greenyellow;
+    border: 2px solid red;
+    transform: rotateY(180deg);
 }
 
 .snow-flakes {
