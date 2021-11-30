@@ -16,6 +16,32 @@
     100% { transform: rotate(-5deg); }
   }
 
+@keyframes right-to-left {
+    0% {
+      right: 0;
+    }
+    50% {
+      left: 0;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  
+@keyframes left-to-right {
+    0% {
+      left: 0;
+    }
+    50% {
+      right: 0;
+      transform: rotate(90deg);
+    }
+    100% {
+      left: 0;
+      transform: rotate(-90deg);
+    }
+  }
+
 html {
     min-height: 100vh;
 }
@@ -112,8 +138,8 @@ body {
 }
 
 .card-back:hover .top-left-flakes {
-    transform: rotate(180deg);
-    transform: translateX(100%);
+    animation: left-to-right 1s;
+    animation-iteration-count: infinite;
 }
 
 .card-back {
