@@ -103,6 +103,14 @@ body {
     border-style: solid;
 }
 
+.card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+
 .card-front {
     transform: rotateX(180deg);
 }
