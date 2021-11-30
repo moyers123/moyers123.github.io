@@ -33,7 +33,7 @@
       left: 0;
     }
     50% {
-      left: 90px;
+      left: 80px;
       transform: rotate(180deg);
     }
     100% {
@@ -138,7 +138,7 @@ body {
 }
 
 .card-back:hover .top-left-flakes {
-    animation: left-to-right 1s;
+    animation: left-to-right 1.5s;
     animation-iteration-count: infinite;
 }
 
