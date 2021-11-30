@@ -119,6 +119,10 @@ body {
 }
 
 .value {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50%;
     transform: scale(0.9);
 }
 
