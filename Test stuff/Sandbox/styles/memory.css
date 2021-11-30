@@ -123,11 +123,11 @@ body {
     align-items: center;
     width: auto;
     height: 50%;
-    transform: scale(0.9);
 }
 
 .card-front:hover .value {
-    transform: scale(1);
+    height: 55%;
+    width: auto;
 }
 
 .snow-flakes {
