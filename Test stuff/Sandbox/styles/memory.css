@@ -102,9 +102,10 @@ body {
     border-radius: 12px;
     border-width: 1px;
     border-style: solid;
+    transition: transform 500ms ease-in-out;
 }
 
-.cards.visible .card-back {
+.cards:hover .card-back {
     transform: rotateY(-180deg);
 }
 
@@ -126,6 +127,7 @@ body {
 }
 
 .card-front:hover .value {
+    transition: height 100ms ease-in-out;
     height: 55%;
     width: auto;
 }
