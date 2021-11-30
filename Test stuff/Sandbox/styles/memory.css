@@ -111,7 +111,12 @@ body {
     height: 60%;
 }
 
-.card-back:hover .top-left-flakes, .bottom-right-flakes {
+.card-back:hover .top-left-flakes {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+
+.card-back:hover .bottom-right-flakes {
     animation: shake 1s;
     animation-iteration-count: infinite;
 }
