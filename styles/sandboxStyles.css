@@ -64,9 +64,11 @@ table {
 
   tbody, p {
     color: black;
+    font-size: 12px;
   }
 
   .linkTitle {
     font-style: italic;
+    font-size: 14px;
   }
 
