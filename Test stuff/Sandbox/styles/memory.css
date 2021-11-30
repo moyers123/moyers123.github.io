@@ -105,11 +105,11 @@ body {
     transition: transform 500ms ease-in-out;
 }
 
-.cards:hover .card-back {
+.cards.visible .card-back {
     transform: rotateY(-180deg);
 }
 
-.cards:hover .card-front {
+.cards.visible .card-front {
     transform: rotateY(0);
 }
 
