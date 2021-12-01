@@ -15,7 +15,7 @@ class MixOrMatch {
 
         setTimeout(() => {
             this.shuffleCards();
-            this.countdown = this.startCountdown();
+            this.countDown = this.startCountDown();
             this.busy = false;
         }, 500);
         this.hideCards();
