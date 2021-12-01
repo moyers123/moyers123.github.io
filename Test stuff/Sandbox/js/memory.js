@@ -42,8 +42,44 @@ class mixOrMatch {
             this.ticker.innerText = this.totalClicks;
             cards.classList.add('visible');
 
-            //if()
+            if(this.cardToCheck) {
+                this.checkForCardMatch(cards);
+            } else {
+                this.cardToCheck = cards;
+            }
         }    
+    }
+
+    checkForCardMatch(cards) {
+        if(this.getCardType(cards) === this.getCardType(this.cardToCheck)) {
+            this.cardMatch(cards, this.cardToCheck);
+        } else {
+            this.cardMisMatch(cards, this.cardToCheck);
+        }
+        this.cardToCheck = null;
+    } 
+
+    cardMatch(cards1, cards2) {
+        this.matchedCards.push(cards1);
+        this.matchedCards.push(cards2);
+        cards1.classList.add('matched');
+        cards2.classList.add('matched');
+        if(this.matchedCards.length === this.cardArray.length) {
+            this.victory();
+        }
+    }
+
+    cardMisMatch(cards1, cards2) {
+        this.busy = true;
+        setTimeout(() => {
+            cards1.classList.remove('visible');
+            cards2.classList.remove('visible');
+            this.busy = false;
+        }, 1000)
+    }
+
+    getCardType(cards) {
+        return cards.getElementsByClassName('value')[0].src;
     }
 
     startCountdown() {
