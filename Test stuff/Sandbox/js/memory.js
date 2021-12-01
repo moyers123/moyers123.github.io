@@ -1,9 +1,3 @@
-if(document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ready());
-} else {
-    ready();
-}
-
 class mixOrMatch {
     constructor(totalTime, card) {
         this.cardArray = card;
@@ -131,4 +125,10 @@ function ready() {
             game.flipCard(cards);
         });
     });
+}
+
+if(document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ready());
+} else {
+    ready();
 }
