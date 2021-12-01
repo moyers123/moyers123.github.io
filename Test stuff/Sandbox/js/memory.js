@@ -19,8 +19,23 @@ class mixOrMatch {
         this.matchedCards = [];
         this.busy = true;
 
-        this.shuffleCards();
+        setTimeout(() => {
+            this.shuffleCards();
+            this.countdown = this.startCountdown();
+            this.busy = false;
+        }, 500);
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
     }
+
+    hideCards() {
+        this.cardArray.forEach(cards => {
+            cards.classList.remove('visible');
+            cards.classList.remove('matched');
+        });
+    }
+
     flipCard(cards) {
         if(this.canFlipCard(cards)) {
             this.totalClicks++;
@@ -29,6 +44,26 @@ class mixOrMatch {
 
             //if()
         }    
+    }
+
+    startCountdown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0) {
+                this.gameOver;
+            }
+        }, 1000);
+    }
+
+    gameOver() {
+        clearInterval(this.countdown);
+        document.getElementById('game-over').classList.add('visible');
+    }
+
+    victory() {
+        clearInterval(this.countdown);
+        document.getElementById('victory').classList.add('visible');
     }
 
     shuffleCards() {
