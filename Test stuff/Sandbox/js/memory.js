@@ -121,7 +121,7 @@ function ready() {
         });
     });
     cards.forEach(card => {
-        cards.addEventListener('click', () => {
+        card.addEventListener('click', () => {
             game.flipCard(card);
         });
     });
