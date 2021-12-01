@@ -134,7 +134,7 @@ body {
     transform: rotateY(0);
 }
 
-.card.match .value {
+.card.matched .value {
     animation: dance 1s linear infinite 500ms;
 }
 
