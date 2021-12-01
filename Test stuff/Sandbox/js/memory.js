@@ -4,9 +4,22 @@ if(document.readyState === 'loading') {
     ready();
 }
 
+class mixOrMatch {
+    constructor(totalTime, card) {
+        this.cardArray = card;
+        this.totalTime = totalTime;
+        this.timeRemaining = totalTime;
+        this.timer = document.getElementById('time-remaining');
+        this.ticker = document.getElementById('flips');
+    }
+    startGame() {
+        this.cardToCheck = null;
+    }
+}
+
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
-    let cards = Array.from(document.getElementsByClassName('cards'));
+    let card = Array.from(document.getElementsByClassName('cards'));
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -14,7 +27,7 @@ function ready() {
             //game.startGame();//
         });
     });
-    cards.forEach(cards => {
+    card.forEach(cards => {
         cards.addEventListener('click', () => {
             //game.flipCard(cards);//
         });
