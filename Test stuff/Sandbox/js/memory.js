@@ -105,7 +105,7 @@ class MixOrMatch {
     }
 
     canFlipCard(card) {
-        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardtoCheck;
+        return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardtoCheck);
     }
 }
 
