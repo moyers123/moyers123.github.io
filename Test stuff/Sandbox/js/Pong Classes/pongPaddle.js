@@ -15,14 +15,14 @@ export default class Paddle {
     }
 
     rect() {
-        return this.paddleElement.getBoundClientRect();
+        return this.paddleElement.getBoundingClientRect();
     }
 
     reset() {
         this.position = 50;
     }
 
-    update(delta, ballY) {
-        this.position = speed * delta * (ballY - this.position);
+    update(delta, ballHeight) {
+        this.position += speed * delta * (ballHeight - this.position);
     }
 }
