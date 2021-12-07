@@ -11,7 +11,7 @@ let lastTime
 function update(time) {
     if (lastTime != null) {
         const delta = time - lastTime;
-        ball.update(delta);
+        ball.update(delta, [player1Paddle.rect(), player2Paddle.rect()]);
         player2Paddle.update(delta, ball.y)
 
         if(lose()) {
