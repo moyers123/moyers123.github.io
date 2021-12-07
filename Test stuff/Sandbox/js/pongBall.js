@@ -10,7 +10,7 @@ export default class Ball {
         return parseFloat(getComputedStyle(this.ballElement).getPropertyValue('--x'));
     }
 
-    set x() {
+    set x(value) {
         this.ballElement.style.setProperty('--x', value)
     }
 
@@ -18,7 +18,7 @@ export default class Ball {
         return parseFloat(getComputedStyle(this.ballElement).getPropertyValue('--y'));
     }
 
-    set y() {
+    set y(value) {
         this.ballElement.style.setProperty('--y', value)
     }
 
