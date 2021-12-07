@@ -6,6 +6,10 @@ export default class Ball {
         this.reset();
     }
 
+    rect() {
+        return this.ballElement.getBoundingClientRect();
+    }
+
     get x() {
         return parseFloat(getComputedStyle(this.ballElement).getPropertyValue('--x'));
     }
@@ -36,6 +40,11 @@ export default class Ball {
     update(delta) {
         this.x += this.direction.x * this.velocity * delta;
         this.y += this.direction.y * this.velocity *delta;
+        const rect = this.rect();
+
+        if (rect.bottom >= window.innerHeight || rect.top <= 0) {
+            this.direction.y *= -1;
+        }
     }
 }
 
