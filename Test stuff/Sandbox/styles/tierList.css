@@ -39,6 +39,10 @@ h1 {
     border: 1px solid black;
 }
 
+.card-container {
+    max-width: 100%;
+}
+
 .label {
     display: flex;
     justify-content: center;
@@ -51,9 +55,10 @@ h1 {
     color: rgb(32, 32, 32);
 }
 
-.card {
+.card,
+img {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100px;
