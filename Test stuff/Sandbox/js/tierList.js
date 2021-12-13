@@ -19,6 +19,8 @@ rows.forEach((row, index) => {
     row.ondrop = onDrop;
 })
 
+
+//click and drag//
 const cards = document.querySelectorAll('.card');
 
 const onDragStart = (event) => {
@@ -36,3 +38,14 @@ cards.forEach((card) => {
     card.ondragstart = onDragStart;
     card.ondragend = onDragEnd;
 })
+
+//card-container//
+const cardBox = document.querySelector('#card-container');
+
+const onDropCard = (event) => {
+    const id = event.dataTransfer.getData('id');
+    cardBox.appendChild(document.getElementById(id));
+}
+
+cardBox.ondrop = onDropCard;
+cardBox.ondragover = (event) => event.preventDefault();
