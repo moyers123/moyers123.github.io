@@ -35,7 +35,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     width: 98%;
-    height: 100px;
+    height: auto;
     background-color: rgb(56, 56, 56);
     border: 1px solid black;
 }
