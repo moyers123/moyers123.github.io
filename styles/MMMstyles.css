@@ -1,0 +1,34 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+li {
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+li,
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: rgb(233, 233, 233);
+    float: left;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+    letter-spacing: 4px;
+    line-height: 55px;
+    margin-left: 25px;
+}
+
+body {
+    margin: 0;
+}
