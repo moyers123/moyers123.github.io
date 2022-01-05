@@ -1,15 +1,24 @@
-//game loop//
+import { update as updateSnake, draw as drawSnake, snakeSpeed, getSnakeHead, snakeIntersection } from './Snake Classes/game.js'
+import { update as updateFood, draw as drawFood} from './Snake Classes/food.js';
+import { outsideGrid } from './Snake Classes/grid.js'
+
 let lastRenderTime = 0;
-const snakeSpeed = 2;
-const snakeBody = [{ x: 11, y:11 }];
+let gameOver = false;
 const gameBoard = document.getElementById('game-board')
 
 function main(currentTime) {
+    if(gameOver) {
+        if(confirm('You lost. Press ok to restart.')) {
+            window.location = '/'
+        }
+        return
+    }
+
+    window.requestAnimationFrame(main);
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000;
     if (secondsSinceLastRender < 1 / snakeSpeed) return
 
-
-    window.requestAnimationFrame(main);
+    
     lastRenderTime = currentTime;
 
     update()
@@ -19,15 +28,17 @@ function main(currentTime) {
 window.requestAnimationFrame(main);
 
 function update() {
-    
+    updateSnake();
+    updateFood();
+    checkDeath();
 }
 
-function draw(gameBoard) {
-    snakeBody.forEach(segment => {
-        const snakeElement = document.createElement('div')
-        snakeElement.style.gridRowStart = segment.x;
-        snakeElement.style.gridColumnStart = segment.y;
-        snakeElement.classList.add('snake');
-        gameBoard.appendChild(snakeElement);
-    })
+function draw() {
+    gameBoard.innerHTML = '';
+    drawSnake(gameBoard);
+    drawFood(gameBoard);
+}
+
+function checkDeath() {
+    gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
