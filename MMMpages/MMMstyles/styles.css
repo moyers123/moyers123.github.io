@@ -1,0 +1,58 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(250, 61, 61);
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+}
+
+ul {
+    text-align: right;
+}
+
+li {
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: 2px;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+li,
+a {
+    color:rgb(233, 233, 233);
+    text-decoration: none;
+}
+
+li,
+a:hover{
+    color: yellow;
+
+}
+
+.logo {
+    color: rgb(233, 233, 233);
+    float: left;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+    letter-spacing: 4px;
+    line-height: 55px;
+    margin-left: 25px;
+}
+
+.notice {
+    background-color: black;
+    top: 10%;
+}
