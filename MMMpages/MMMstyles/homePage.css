@@ -1,0 +1,15 @@
+.notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(233, 233, 233);
+    margin: 60px 25% 0 25%;
+}
+
+.notice a{
+    color: blue;
+}
+
+.notice a:hover {
+    color: yellow;
+}
